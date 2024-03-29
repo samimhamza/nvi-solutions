@@ -1,16 +1,18 @@
 import './App.css';
-import CheckBox from './components/CheckBox';
-import Footer from './components/Footer';
+import CheckBoxContainer from './components/CheckBoxContainer';
 import Graph from './components/Graph';
+import { CheckedCurrenciesProvider } from './context/DataContext';
 
 function App() {
   return (
     <div>
-      <div className='main'>
-        <CheckBox />
-        <Graph />
-      </div>
-      {/* <Footer /> */}
+      <CheckedCurrenciesProvider>
+        <div className='main'>
+          <CheckBoxContainer />
+          <Graph />
+        </div>
+        {/* <Footer /> */}
+      </CheckedCurrenciesProvider>
     </div>
   );
 }
