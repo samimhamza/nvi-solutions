@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox {
+  height: 10rem;
+  width: 40%;
+}
+
+.graph {
+  height: 10rem;
+  width: 60%;
+  border: 1px solid;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency-code {
+    margin-left: 1rem;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+ label {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+
+
+
+label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+img {
+  margin-top: -8px;
+}
+
+
