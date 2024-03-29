@@ -7,16 +7,14 @@ function CheckBoxContainer() {
   const { setStartDateInterval, setEndDateInterval } = useCheckedCurrencies();
   const [selectedStartDate, setSelectedStartDate] =
     useState(setStartDateInterval);
-  const [selectedDate, setSelectedDate] = useState(setStartDateInterval);
-
-  console.log(selectedDate);
+  const [selectedEndDates, setSelectedEndDates] = useState(setEndDateInterval);
 
   const handleStartDate = (date: string) => {
     setSelectedStartDate(date);
   };
 
   const handleEndDate = (date: string) => {
-    setEndDateInterval();
+    setSelectedEndDates(date);
   };
 
   return (
@@ -25,14 +23,14 @@ function CheckBoxContainer() {
         <Checkbox label='Евро' currency='eur' />
         <Checkbox label='Доллар' currency='usd' />
         <Checkbox label='Юань' currency='cny' />
-        <div>
-          <div>
-            <p>Дата с</p>
+        <div className='date'>
+          <div className='date-start'>
+            <p className='date-text'>Дата с</p>
             <DateInput value={selectedStartDate} onChange={handleStartDate} />
           </div>
-          <div>
-            <p>Дата по</p>
-            <DateInput value={selectedDate} onChange={handleEndDate} />
+          <div className='date-end'>
+            <p className='date-text'>Дата по</p>
+            <DateInput value={selectedEndDates} onChange={handleEndDate} />
           </div>
         </div>
       </div>

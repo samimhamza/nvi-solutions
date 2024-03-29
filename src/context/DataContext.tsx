@@ -40,8 +40,7 @@ export const CheckedCurrenciesProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [checkedCurrencies, setCheckedCurrencies] = useState<Currency[]>([]);
-  const [startDate, setStartDate] = useState<string>(formattedSevenDaysAgo);
-  const [endDate, setEndDate] = useState<string>(formattedToday);
+
 
   // Function to add a currency to the checkedCurrencies array
   const addCurrency = (currency: Currency) => {
