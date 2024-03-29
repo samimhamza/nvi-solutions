@@ -7,13 +7,18 @@
 .main {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .checkbox {
   height: 10rem;
   width: 40%;
 }
+
+.currency-checkboxes > *:not(:last-child) {
+  margin-bottom: 1rem; /* Adjust margin as needed */
+}
+
 
 .graph {
   height: 10rem;
@@ -22,39 +27,40 @@
 }
 
 .container {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: flex-start;
 }
 
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .date {
-  border: 1px solid red;
   width: 100%;
 }
 
 .date-start,
 .date-end {
-  border: 1px solid red;
   display: flex;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: left;
+  padding: 1.5rem 0;
 }
+
 
 .currency-code,
 .date-text {
-  margin-left: 1rem;
   font-size: 24px;
   font-weight: 500;
 }
 
+.currency-code{
+  margin-left: 1rem;
+}
+.date-text {
+  margin-right: 2rem;
+}
 label {
   position: relative;
   width: 40px;

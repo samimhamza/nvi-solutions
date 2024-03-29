@@ -20,9 +20,11 @@ function CheckBoxContainer() {
   return (
     <div className='checkbox'>
       <div className='container'>
-        <Checkbox label='Евро' currency='eur' />
-        <Checkbox label='Доллар' currency='usd' />
-        <Checkbox label='Юань' currency='cny' />
+        <div className='currency-checkboxes'>
+          <Checkbox label='Евро' currency='eur' />
+          <Checkbox label='Доллар' currency='usd' />
+          <Checkbox label='Юань' currency='cny' />
+        </div>
         <div className='date'>
           <div className='date-start'>
             <p className='date-text'>Дата с</p>
