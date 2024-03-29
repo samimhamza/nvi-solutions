@@ -126,7 +126,7 @@ function Graph() {
 			<div className="chart">
 				{data && <Line options={options} data={data} />}
 			</div>
-			<style jsx global>{`
+			<style>{`
 				.chart {
 					width: 60%;
 				}
