@@ -31,10 +31,10 @@ export const fetchCurrencyDataForRange = async (
   return currencyDataArray;
 };
 
-const fetchDataForDate = async (date: string): Promise<CurrencyData> => {
+export const fetchDataForDate = async (date: string): Promise<CurrencyData> => {
   try {
     const response = await axios.get(
-      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@${date}/v1/rates.json`
+      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-02/v1/currencies/rub.json`
     );
     return response.data;
   } catch (error) {
@@ -42,6 +42,3 @@ const fetchDataForDate = async (date: string): Promise<CurrencyData> => {
     throw error;
   }
 };
-
-
-
